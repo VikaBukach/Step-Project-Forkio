@@ -24,9 +24,9 @@ const html = () => {
 const css = () => {
     return gulp.src("./src/styles/style.scss")
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('style.min.css'))
-        .pipe(autoprefixer({ overrideBrowserList: ['last 10 version'], grid: true, cascade: true }))
-        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(concat('style.css'))
+        .pipe(autoprefixer({overrideBrowserList: ['last 10 version'], grid: true, cascade: true}))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest("./dist/styles"));
 }
 
