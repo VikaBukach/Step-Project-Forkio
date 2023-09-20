@@ -14,6 +14,10 @@
   font-weight: 700;
   text-transform: uppercase;
 
+  @media screen and (max-width: $ui-breakpoint-sm-min) {
+
+  }
+
 }
 .section__description {
   display: block;
@@ -26,8 +30,13 @@
   padding-bottom: 35px;
 }
 
+.img__btn1,
 .img__btn2 {
-  margin-left: 70px;
+  display: block;
+  margin: 0 auto
+}
+
+.img__btn2 {
   padding-top: 20px;
 }
 
@@ -75,6 +84,6 @@
 }
 
 .img__editor {
-  width: 110%;
+  width: 160%;
   height: 100%;
 }
