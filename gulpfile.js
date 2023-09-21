@@ -22,11 +22,11 @@ const html = () => {
 }
 
 const css = () => {
-    return gulp.src("./src/styles/*.scss")
+    return gulp.src("./src/styles/style.scss")
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.min.css'))
-        .pipe(autoprefixer({overrideBrowserList: ['last 10 version'], grid: true, cascade: true}))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(autoprefixer({ overrideBrowserList: ['last 10 version'], grid: true, cascade: true }))
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(gulp.dest("./dist/styles"));
 }
 
@@ -49,7 +49,7 @@ const image = () => {
 }
 
 const cleanDist = () => {
-    return gulp.src('./dist', {read: false})
+    return gulp.src('./dist', { read: false })
         .pipe(clean());
 }
 
@@ -62,7 +62,7 @@ const server = () => {
 }
 
 const watcher = () => {
-    gulp.watch("./src/*.html", html).on('all', browserSync.reload);
+    gulp.watch("./src/**/*.html", html).on('all', browserSync.reload);
     gulp.watch("./src/styles/**/*.{scss,sass,css}", css).on('all', browserSync.reload);
     gulp.watch("./src/scripts/**/*.js", js).on('all', browserSync.reload);
     gulp.watch("./src/images/**/*.*", image).on('all', browserSync.reload);

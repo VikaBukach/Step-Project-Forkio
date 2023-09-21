@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 300ms;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: transparent;
+
+}
+
+.button {}
+
+.container {
+    max-width: 340px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
