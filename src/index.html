@@ -1,9 +1,23 @@
-@@include('./structure/head.html')
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORKIO</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
 
 @@include('./structure/header.html')
-@@include('./structure/hero.html')
+<main>
+    @@include('./structure/hero.html')
+    @@include('./structure/section_editor.html')
+</main>
 
 
 
-@@include('./structure/footer.html')
+<script src="scripts/script.min.js"></script>
+</body>
+</html>

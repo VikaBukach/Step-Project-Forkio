@@ -1,16 +1,24 @@
-//********************* mixins
-@import "_mixins/general";
+////********************* mixins
+//@import "_mixins/general";
+//
+////********************* global
+//@import "global/reset";
+//@import "global/fonts";
+//@import "global/variables";
+//@import "global/base";
+//
+////********************* other
+//
+////********************* block
+//@import "./block/header";
+//@import "./block/hero";
+//@import "./block/section_editor";
 
-//********************* global
 @import "global/reset";
+@import "global/base";
 @import "global/fonts";
 @import "global/variables";
-@import "global/base";
-
-//********************* other
-
-//********************* block
-@import "./block/header";
-@import "./block/hero";
-@import "./block/footer";
-@import "./block/section_editor";
+@import "_mixins/general";
+@import "block/header";
+@import "block/hero";
+@import "block/section_editor";
