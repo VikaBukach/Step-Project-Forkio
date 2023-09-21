@@ -26,11 +26,18 @@
 
   @media (min-width: 476px) {
     font-size: 33px;
-    line-height: 40px;
+    line-height: 33px;
   }
 
   @media (min-width: 576px) {
     font-size: 33px;
+    line-height: 38px;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 33px;
+    font-size: 42px;
+    font-weight: 700;
     line-height: 42px;
   }
 }
@@ -44,6 +51,17 @@
   font-weight: 400;
   line-height: 20px;
   padding-bottom: 35px;
+
+  @media (min-width: 576px) {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
 }
 
 .img__btn1,
@@ -78,6 +96,7 @@
 //-----------------------------------//
 .offer__title {
   margin-top: 120px;
+  margin-bottom: 36px;
   color: #8D81AC;
   text-align: center;
   font-family: Montserrat;
@@ -85,18 +104,33 @@
   font-weight: 700;
   line-height: 38px;
   justify-content: center;
-  padding-bottom: 36px;
 
   @media (min-width: 476px) {
+    margin-top: 134px;
+    margin-bottom: 40px;
     font-size: 39px;
     line-height: 38px;
   }
 
   @media (min-width: 576px) {
+    margin-top: 140px;
+    margin-bottom: 44px;
     font-size: 40px;
+  }
+
+  @media (min-width: 769px) {
+    margin-top: 160px;
+    margin-bottom: 50px;
   }
 }
 
+.offer__title:before {
+  content: "<"
+}
+
+.offer__title:after {
+  content: ">"
+}
 //-----------------------------------//
 .offer__list {
   text-align: center;
@@ -116,6 +150,11 @@
   @media (min-width: 576px) {
     padding-bottom: 50px;
   }
+
+  @media (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
 }
 
 .offer__item--img {
@@ -127,7 +166,6 @@
     margin-right: 43px;
   }
 }
-
 
 .offer__content {
   @media (min-width: 576px) {
@@ -150,10 +188,9 @@
 
     @media (min-width: 576px) {
       display: flex;
-      padding-top: 0px;
-      padding-bottom: 0px;
+      padding-top: 0;
+      padding-bottom: 0;
       justify-content: flex-start;
-
     }
   }
 }
@@ -177,4 +214,21 @@
 .img__editor {
   width: 160%;
   height: 100%;
+
+  @media (min-width: 476px) {
+    width: 150%;
+    height: 90%;
+  }
+
+  @media (min-width: 576px) {
+    width: 130%;
+    height: 90%;
+  }
+
+  @media (min-width: 576px) {
+    margin-left: 68px;
+    width: 100%;
+    height: 100%;
+  }
 }
+
