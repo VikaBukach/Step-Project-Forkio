@@ -131,11 +131,8 @@
 }
   .offer__inner{
     @media (min-width: 1200px) {
-
     }
-
   }
-
 
 .offer__title {
   margin-top: 120px;
@@ -183,8 +180,6 @@
 .offer__title:after {
   content: ">"
 }
-
-//-----------------------------------//
 
 .offer__list {
   text-align: center;
@@ -234,8 +229,6 @@
     margin-right: 43px;
   }
 
-
-
   @media (min-width: 1100px) {
     margin-right: 23px;
   }
@@ -267,7 +260,6 @@
     justify-content: flex-start;
   }
 }
-
 
 .offer__text {
   color: #848E97;
