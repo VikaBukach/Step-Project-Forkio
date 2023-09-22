@@ -31,15 +31,15 @@ button {
 
 .button {}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .container__header {
     max-width: 340px;
     min-width: 320px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
