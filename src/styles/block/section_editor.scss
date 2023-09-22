@@ -128,10 +128,14 @@
     position: relative;
     min-width: 100vw;
   }
-  @media (min-width: 1200px) {
+}
+  .offer__inner{
+    @media (min-width: 1200px) {
+
+    }
 
   }
-}
+
 
 .offer__title {
   margin-top: 120px;
