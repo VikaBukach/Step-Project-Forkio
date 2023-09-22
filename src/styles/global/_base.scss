@@ -31,15 +31,20 @@ button {
 
 .button {}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+// .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+// }
 
-.container__header {
+.container {
     max-width: 340px;
     min-width: 320px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 0 10px;
-}
 
+    @include md {
+        max-width: 788px;
+        min-width: 768px;
+        padding: 0 10px;
+    }
+}
