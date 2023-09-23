@@ -36,6 +36,12 @@ button {
     min-width: 320px;
     margin: 0 auto;
     padding: 0 10px;
+
+    @include md {
+        max-width: 788px;
+        min-width: 768px;
+        padding: 0 10px;
+    }
 }
 
 .container {
