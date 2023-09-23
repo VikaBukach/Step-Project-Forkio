@@ -93,6 +93,10 @@
             flex-wrap: wrap;
             gap: 23px;
         }
+
+        @include lg {
+            flex-wrap: nowrap;
+        }
     }
 
     // .header__cta
@@ -105,20 +109,40 @@
         min-width: 120px;
         margin-left: auto;
         font-weight: 700;
+        color: #fff;
+
+        @include lg {
+            order: 3;
+
+            margin-left: 0;
+        }
     }
 
 }
 
-.nav {
 
+
+.nav {
     position: absolute;
     top: calc(100% + 31px);
     width: 100%;
-    // .nav__list
+    z-index: 1;
+    display: none;
+
+    &.show {
+        display: block;
+    }
 
     @include md {
         position: relative;
         order: 3;
+        display: block;
+
+    }
+
+    @include lg {
+        margin-left: auto;
+        width: auto;
 
     }
 
@@ -162,6 +186,7 @@
         position: relative;
         font-size: 26px;
         line-height: 1;
+        color: #fff;
 
         @include md {
             padding: 0;
@@ -181,6 +206,10 @@
                 background: $accent;
                 left: 3px;
                 top: 10%;
+
+                @include md {
+                    display: none;
+                }
             }
         }
     }

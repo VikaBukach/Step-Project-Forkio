@@ -1,0 +1,51 @@
+.about {
+    background-image: url("../../images/testmonials-bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    text-align: center;
+
+
+
+
+
+    &__wrapper {}
+
+    // .about__title
+
+    &__title {
+        padding: 57px 0 53px 0;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    // .about__list-item
+
+    &__list-item {}
+
+    // .about__list-item-image-hold
+
+    &__list-item-image-hold {}
+
+    // .about__list-item-image
+
+    &__list-item-image {}
+
+    // .about__list-item-text
+
+    &__list-item-text {}
+
+    // .about__footer-text
+
+    &__footer-text {}
+}
+
+.container {}
+
+.aboul {
+
+    // .aboul__list
+
+    &__list {}
+}

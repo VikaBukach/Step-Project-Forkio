@@ -12,7 +12,8 @@ import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 import autoprefixer from 'gulp-autoprefixer';
-import fileInclude from 'gulp-file-include'; // Подключение html секций
+import fileInclude from 'gulp-file-include';
+import sourcemaps from 'gulp-sourcemaps';
 
 
 const html = () => {
@@ -23,10 +24,12 @@ const html = () => {
 
 const css = () => {
     return gulp.src("./src/styles/style.scss")
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
-        .pipe(autoprefixer({overrideBrowserList: ['last 10 version'], grid: true, cascade: true}))
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(autoprefixer({ overrideBrowserList: ['last 10 version'], grid: true, cascade: true }))
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest("./dist/styles"));
 }
 

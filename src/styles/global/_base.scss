@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
 }
 
 body {
@@ -31,7 +30,15 @@ button {
 
 .button {}
 
+<<<<<<< Updated upstream
 .container__header {
+=======
+
+
+
+
+.container {
+>>>>>>> Stashed changes
     max-width: 340px;
     min-width: 320px;
     margin: 0 auto;
@@ -42,6 +49,7 @@ button {
         min-width: 768px;
         padding: 0 10px;
     }
+<<<<<<< Updated upstream
 }
 
 //.container {
@@ -49,3 +57,13 @@ button {
 //    margin: 0 auto;
 //}
 
+=======
+
+    @include lg {
+        max-width: 1220px;
+        min-width: 1200px;
+
+
+    }
+}
+>>>>>>> Stashed changes
