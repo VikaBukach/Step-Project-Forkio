@@ -76,7 +76,7 @@
 
 .what-you-get {
 
-  @include lg  {
+  @include lg {
     display: none;
   }
 }
@@ -84,7 +84,7 @@
 //-----------------------------------//
 .offer {
 
-  @include lg  {
+  @include lg {
     background-color: #F4F4F4;
     position: relative;
     min-width: 100vw;
@@ -109,13 +109,12 @@
     line-height: 38px;
   }
 
-  @include lg  {
-    padding-right: 68px;
-    font-size: 40px;
+  @include lg {
     font-weight: 700;
     line-height: 50px;
     margin-top: 90px;
     margin-bottom: 20px;
+    font-size: 48px;
   }
 }
 
@@ -131,7 +130,7 @@
   text-align: center;
   justify-content: center;
 
-  @include md  {
+  @include md {
     display: grid;
   }
 
@@ -157,8 +156,6 @@
   @include lg {
     padding-bottom: 60px;
     display: flex;
-    justify-content: space-around;
-    //width: 600px;
     width: 50vw;
   }
 }
@@ -173,7 +170,8 @@
   }
 
   @include lg {
-    margin-right: 23px;
+    margin-left: 90px;
+    margin-right: 50px;
   }
 }
 
@@ -204,7 +202,6 @@
   @include lg {
     display: flex;
     justify-content: flex-start;
-
   }
 }
 
@@ -223,14 +220,13 @@
   @include lg {
     display: flex;
     text-align: left;
-    font-size: 13px;
-    width: 360px;
-
+    font-size: 14px;
+    width: 400px;
   }
 }
 
 .img__editor_inner,
-.offer-hideng{
+.offer-hideng {
   overflow-x: hidden;
 }
 
@@ -242,6 +238,10 @@
     width: 100%;
     margin-left: 80px;
   }
+  @include lg {
+    width: 730px;
+    height: 560px;
+  }
 }
 
 .what-you-get-lg {
@@ -249,7 +249,9 @@
 
   @include lg {
     display: flex;
+    justify-content: space-between;
     background-color: #f4f4f4;
     margin-top: 70px
   }
 }
+
