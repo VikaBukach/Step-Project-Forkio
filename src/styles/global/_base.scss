@@ -55,11 +55,10 @@ button {
 }
 
 .container__editor {
-    @include sm {
-        min-width: 320px;
-        margin: 0 10px;
-        padding: 0 10px;
-    }
+
+    min-width: 320px;
+    margin: 0 10px;
+    padding: 0 10px;
 
 
     @include md {

@@ -104,6 +104,17 @@
 
 .what-you-get {
 
+  .container {
+    max-width: 100%;
+  }
+
+  @include md {
+    .container {
+
+      max-width: 788px;
+    }
+  }
+
   @include lg {
     display: none;
   }
@@ -143,23 +154,24 @@
     margin-top: 90px;
     margin-bottom: 20px;
     font-size: 48px;
+    // transform: translateX(calc((100vw - 1200px) / 2));
+
   }
+
 }
 
-.offer__title:before {
-  content: "<"
-}
 
-.offer__title:after {
-  content: ">"
-}
 
 .offer__list {
   text-align: center;
   justify-content: center;
+  max-width: 320px;
+  margin: 0 auto;
 
   @include md {
     display: grid;
+    max-width: unset;
+    margin: unset;
   }
 
   @include lg {
@@ -184,7 +196,7 @@
   @include lg {
     padding-bottom: 60px;
     display: flex;
-    width: 50vw;
+
   }
 }
 
@@ -198,8 +210,8 @@
   }
 
   @include lg {
-    margin-left: 90px;
-    margin-right: 50px;
+    margin-left: 0px;
+    margin-right: 25px;
   }
 }
 
@@ -254,23 +266,24 @@
   }
 }
 
-.img__editor_inner,
-.offer-hideng {
-  overflow-x: hidden;
-}
+
+
 
 
 .img__editor {
-  width: 156%;
+  transform: translateX(10px);
+  max-width: 100%;
+  width: 100%;
+  // object-fit: cover;
+  object-position: 0 0;
+
 
   @include md {
-    width: 100%;
-    margin-left: 80px;
+    transform: translateX(calc((100vw - 768px) / 2));
   }
 
   @include lg {
-    width: 730px;
-    height: 560px;
+    transform: translateX(calc((100vw - 1200px) / 2));
   }
 }
 
@@ -278,9 +291,15 @@
   display: none;
 
   @include lg {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     background-color: #f4f4f4;
-    margin-top: 70px
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+      gap: 40px;
+    }
+
   }
 }

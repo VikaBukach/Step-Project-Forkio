@@ -6,6 +6,7 @@
     text-align: center;
 
 
+
     &__wrapper {}
 
     // .about__title
@@ -19,14 +20,29 @@
     }
 
     &__list {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
         gap: 45px;
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
+            gap: 78px;
+        }
+
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 90px;
+        }
     }
 
     // .about__list-item
 
-    &__list-item {}
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
 
     // .about__list-item-image-hold
 
@@ -42,5 +58,12 @@
 
     // .about__footer-text
 
-    &__footer-text {}
+    &__footer-text {
+        margin-top: 37px;
+        color: #A291A5;
+        font-size: 14px;
+        text-align: center;
+        line-height: 21px;
+
+    }
 }
