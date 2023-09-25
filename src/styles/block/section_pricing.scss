@@ -1,0 +1,112 @@
+.section_pricing--container {
+
+    background: url("../../images/Layer2.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.long__dash {
+    margin-top: 20px;
+    width: 555px;
+    border-bottom: 2px solid #645766;
+}
+
+.section_pricing--title {
+    margin-top: 88px;
+    margin-bottom: 40px;
+    color: $white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.pricing {
+   display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pricing__item {
+    width: 257px;
+    height: 457px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    //opacity: 0.11;
+    //background: #FFF;
+}
+
+.category {
+    @include fl-column;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.price {
+    @include fl-column;
+    color: #FFF;
+    font-family: $ui-ff-Monts;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 90px;
+    width: 257px;
+    height: 57px;
+}
+
+.date {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.dash {
+    width: 60px;
+    height: 5px;
+    flex-shrink: 0
+}
+
+.description {
+    @include fl-column;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.btn__pricing {
+
+}
+
+.btn__pricing-link {
+    background-color: white;
+    opacity: 0.15;
+    border: none;
+    color: white;
+    padding: 15px 38px;
+    display: inline-block;
+    cursor: pointer;
+
+    @include fl-column;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+    width: 88px;
+    height: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 4px 2px;
+
+}

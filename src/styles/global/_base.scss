@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: sans-serif;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -44,13 +44,13 @@ button {
     }
 }
 
-.container__editor {
+.container__editor,
+.section_pricing--container {
     @include sm {
         min-width: 320px;
         margin: 0 10px;
         padding: 0 10px;
     }
-
 
     @include md {
         margin: 0 30px;
