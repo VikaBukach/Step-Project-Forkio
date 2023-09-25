@@ -27,39 +27,22 @@
 }
 
 .section__title {
-  padding-top: 80px;
+  padding-top: 70px;
   padding-bottom: 27px;
-  color: #635C73;
+  color: $title;
   text-align: center;
-  font-family: Montserrat;
+  font-family: $ui-ff-Monts;
   font-size: 26px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 
-  @media (min-width: 476px) {
-    font-size: 33px;
-    line-height: 33px;
-  }
-
-  @media (min-width: 576px) {
-    font-size: 33px;
-    line-height: 38px;
-  }
-
-  @media (min-width: 768px) {
-    padding-bottom: 33px;
+  @include md {
     font-size: 42px;
-    font-weight: 700;
-    line-height: 42px;
+    line-height: 44px;
   }
 
-  @media (min-width: 900px) {
-    font-size: 45px;
-    line-height: 45px
-  }
-
-  @media (min-width: 1200px) {
+  @include lg {
     padding-bottom: 35px;
     font-size: 54px;
     line-height: 54px
@@ -70,24 +53,19 @@
   display: block;
   color: #323232;
   text-align: center;
-  font-family: Lato;
+  font-family: $ui-ff-Lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   padding-bottom: 35px;
 
-  @media (min-width: 576px) {
-    font-size: 17px;
-    line-height: 28px;
-  }
-
-  @media (min-width: 768px) {
+  @include md {
     font-size: 21px;
     line-height: 32px;
     padding-bottom: 24px;
   }
 
-  @media (min-width: 1100px) {
+  @include lg {
     display: flex;
     width: 861px;
     margin: 0 auto;
@@ -124,57 +102,47 @@
   }
 }
 
+.what-you-get {
+
+  @include lg {
+    display: none;
+  }
+}
+
 //-----------------------------------//
 .offer {
 
-  @media (min-width: 1100px) {
+  @include lg {
     background-color: #F4F4F4;
     position: relative;
     min-width: 100vw;
   }
 }
-  .offer__inner{
-    @media (min-width: 1200px) {
-    }
-  }
 
 .offer__title {
   margin-top: 120px;
   margin-bottom: 36px;
   color: #8D81AC;
   text-align: center;
-  font-family: Montserrat;
+  font-family: $ui-ff-Monts;
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
   justify-content: center;
 
-  @media (min-width: 476px) {
-    margin-top: 134px;
-    margin-bottom: 40px;
-    font-size: 39px;
-    line-height: 38px;
-  }
-
-  @media (min-width: 576px) {
+  @include md {
     margin-top: 140px;
     margin-bottom: 44px;
     font-size: 40px;
+    line-height: 38px;
   }
 
-  @media (min-width: 769px) {
-    margin-top: 160px;
-    margin-bottom: 50px;
-  }
-
-  @media (min-width: 1100px) {
-    padding-right: 63px;
-    font-size: 40px;
+  @include lg {
     font-weight: 700;
     line-height: 50px;
-    float: right;
     margin-top: 90px;
     margin-bottom: 20px;
+    font-size: 48px;
   }
 }
 
@@ -190,16 +158,15 @@
   text-align: center;
   justify-content: center;
 
-  @media (min-width: 576px) {
+  @include md {
     display: grid;
   }
 
-  @media (min-width: 1100px) {
+  @include lg {
     margin-left: 30px;
     padding-left: 0;
     padding-right: 0;
     margin-top: 70px;
-    padding-top: 90px;
     display: flex;
     flex-direction: column;
   }
@@ -210,17 +177,13 @@
   align-items: center;
   padding-bottom: 38px;
 
-  @media (min-width: 576px) {
+  @include md {
     padding-bottom: 50px;
   }
 
-  @media (min-width: 768px) {
+  @include lg {
     padding-bottom: 60px;
-  }
-  @media (min-width: 1100px) {
     display: flex;
-    justify-content: space-around;
-    //width: 600px;
     width: 50vw;
   }
 }
@@ -228,19 +191,21 @@
 .offer__item--img {
   margin-left: 30px;
 
-  @media (min-width: 576px) {
+  @include md {
     width: 100px;
     float: left;
     margin-right: 43px;
   }
 
-  @media (min-width: 1100px) {
-    margin-right: 23px;
+  @include lg {
+    margin-left: 90px;
+    margin-right: 50px;
   }
 }
 
 .offer__content {
-  @media (min-width: 576px) {
+
+  @include md {
     display: flex;
     flex-direction: column;
   }
@@ -254,14 +219,16 @@
   padding-top: 27px;
   padding-bottom: 14px;
 
-  @media (min-width: 476px) {
+  @include md {
     line-height: 18px;
-  }
-
-  @media (min-width: 576px) {
     display: flex;
     padding-top: 0;
     padding-bottom: 0;
+    justify-content: flex-start;
+  }
+
+  @include lg {
+    display: flex;
     justify-content: flex-start;
   }
 }
@@ -269,45 +236,51 @@
 .offer__text {
   color: #848E97;
   text-align: center;
-  font-family: Lato;
+  font-family: $ui-ff-Lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
 
-  @media (min-width: 576px) {
+  @include md {
     display: flex;
     text-align: left;
   }
-  @media (min-width: 1100px) {
-    font-size: 13px;
-    width: 390px;
+
+  @include lg {
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    width: 400px;
   }
 }
 
+.img__editor_inner,
+.offer-hideng {
+  overflow-x: hidden;
+}
+
+
 .img__editor {
-  width: 160%;
-  height: 100%;
+  width: 156%;
 
-  @media (min-width: 476px) {
-    width: 150%;
-    height: 90%;
-  }
-
-  @media (min-width: 576px) {
-    width: 130%;
-    height: 90%;
-  }
-
-  @media (min-width: 786px) {
-
+  @include md {
     width: 100%;
-    height: 100%;
+    margin-left: 80px;
   }
 
-  @media (min-width: 1100px) {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    transform: translate(100%, -100%);
+  @include lg {
+    width: 730px;
+    height: 560px;
+  }
+}
+
+.what-you-get-lg {
+  display: none;
+
+  @include lg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    margin-top: 70px
   }
 }
