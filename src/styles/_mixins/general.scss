@@ -1,5 +1,5 @@
 @mixin lg {
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (min-width: 1200px) {
         @content;
     }
 }
@@ -9,13 +9,4 @@
 
         @content;
     }
-<<<<<<< Updated upstream
-}
-
-@mixin sm {
-    @media only screen and (max-width: 340px) {
-        @content;
-    }
-=======
->>>>>>> Stashed changes
 }
