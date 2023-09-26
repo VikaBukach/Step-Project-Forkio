@@ -41,12 +41,17 @@
     &__list-item {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 22px;
     }
 
     // .about__list-item-image-hold
 
-    &__list-item-image-hold {}
+    &__list-item-image-hold {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     // .about__list-item-image
 
@@ -54,7 +59,9 @@
 
     // .about__list-item-text
 
-    &__list-item-text {}
+    &__list-item-text {
+        font-family: 'Lato', sans-serif;
+    }
 
     // .about__footer-text
 
@@ -64,6 +71,9 @@
         font-size: 14px;
         text-align: center;
         line-height: 21px;
-
+        font-family: 'Lato', sans-serif;
+        max-width: 890px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

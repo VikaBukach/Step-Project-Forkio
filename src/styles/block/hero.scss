@@ -32,6 +32,7 @@
         color: $accent;
         max-width: 270px;
         margin: 0 auto 14px auto;
+        font-family: lato;
 
         @include md {
             max-width: unset;
