@@ -17,3 +17,8 @@
   text-align: center;
 }
 
+@mixin fl-center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
