@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
 }
 
 body {
@@ -31,7 +30,11 @@ button {
 
 .button {}
 
-.container__header {
+
+
+
+
+.container {
     max-width: 340px;
     min-width: 320px;
     margin: 0 auto;
@@ -42,15 +45,20 @@ button {
         min-width: 768px;
         padding: 0 10px;
     }
+
+    @include lg {
+        max-width: 1220px;
+        min-width: 1200px;
+
+
+    }
 }
 
-.container__editor,
-.section_pricing--container {
-    @include sm {
-        min-width: 320px;
-        margin: 0 10px;
-        padding: 0 10px;
-    }
+.container__editor {
+
+    min-width: 320px;
+    margin: 0 10px;
+    padding: 0 10px;
 
     @include md {
         margin: 0 30px;
