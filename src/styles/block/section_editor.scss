@@ -157,10 +157,7 @@
     // transform: translateX(calc((100vw - 1200px) / 2));
 
   }
-
 }
-
-
 
 .offer__list {
   text-align: center;
@@ -196,7 +193,6 @@
   @include lg {
     padding-bottom: 60px;
     display: flex;
-
   }
 }
 
@@ -266,17 +262,12 @@
   }
 }
 
-
-
-
-
 .img__editor {
   transform: translateX(10px);
   max-width: 100%;
   width: 100%;
   // object-fit: cover;
   object-position: 0 0;
-
 
   @include md {
     transform: translateX(calc((100vw - 768px) / 2));
@@ -300,6 +291,5 @@
       margin-top: 70px;
       gap: 40px;
     }
-
   }
 }
