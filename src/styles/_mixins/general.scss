@@ -9,3 +9,16 @@
         @content;
     }
 }
+
+@mixin fl-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin fl-center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
