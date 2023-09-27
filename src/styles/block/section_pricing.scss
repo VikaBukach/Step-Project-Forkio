@@ -13,6 +13,7 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 18px;
 
   &__long-dash {
     @include fl-center;
@@ -66,24 +67,34 @@
   &__list-item {
     width: 257px;
     height: 457px;
+    background-color: rgba(255, 255, 255, 0.11);
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.11);
   }
 
+  //&__list-item:nth-child(3){
+  //  width: 300px;
+  //  height: 560px;
+  //  background: #463048;
+  //  opacity: 0.84;
+  //  display: flex;
+  //  flex-direction: column;
+  //}
+
   &__list-item-category {
-    @include fl-column;
     color: #FFF;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    padding: 36px 60px;
+    padding: 36px 0px;
+    text-align: center;
+
     background-color: rgba(255, 255, 255, 0.06);
   }
 
   &__list-item-price {
-    @include fl-column;
+    text-align: center;
     color: #FFF;
     font-size: 60px;
     font-weight: 700;
@@ -107,13 +118,12 @@
     @include fl-center;
     width: 60px;
     height: 5px;
-
   }
 
   &__list-item-description {
-    @include fl-column;
+    text-align: center;
     padding-top: 30px;
-    padding-bottom: 38px;
+    padding-bottom: 36px;
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
@@ -123,12 +133,10 @@
 
 .btn__pricing {
   @include fl-center;
-  border: none;
-  width: 163px;
+  //padding-bottom: 67px;
 }
 
 .btn__pricing-link {
-  text-align: center;
   background: rgba(255, 255, 255, 0.15);
   padding: 15px 38px;
   border-radius: 40px;
@@ -139,3 +147,5 @@
   text-transform: uppercase;
   font-size: 20px;
 }
+
+
