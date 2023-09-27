@@ -15,6 +15,10 @@
   background-size: cover;
   padding-bottom: 18px;
 
+  @include md {
+    padding-bottom: 153px;
+  }
+
   &__long-dash {
     @include fl-center;
     padding-top: 22px;
@@ -23,16 +27,17 @@
     border-bottom: 2px solid #645766;
 
     @include md {
+      width: 555px;
       padding-top: 20px;
       margin-bottom: 88px;
     }
     @include lg {
       margin-bottom: 112px;
+      width: 780px;
     }
   }
 
   &__title {
-
     padding-bottom: 32px;
     color: $white;
     text-align: center;
@@ -45,6 +50,7 @@
       line-height: 44px;
     }
     @include lg {
+      padding-bottom: 112px;
       font-size: 48px;
       line-height: 50px;
     }
@@ -57,7 +63,8 @@
     gap: 18px;
 
     @include md {
-      gap: 25px;
+      column-gap: 25px;
+      row-gap: 71px;
     }
     @include lg {
       gap: 15px;
@@ -72,11 +79,10 @@
     flex-direction: column;
   }
 
-  //&__list-item:nth-child(3){
+  //&__list-item:nth-child(3) {
   //  width: 300px;
   //  height: 560px;
   //  background: #463048;
-  //  opacity: 0.84;
   //  display: flex;
   //  flex-direction: column;
   //}
@@ -89,7 +95,6 @@
     text-transform: uppercase;
     padding: 36px 0px;
     text-align: center;
-
     background-color: rgba(255, 255, 255, 0.06);
   }
 
@@ -127,13 +132,12 @@
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 26px;
   }
 }
 
 .btn__pricing {
   @include fl-center;
-  //padding-bottom: 67px;
 }
 
 .btn__pricing-link {
@@ -148,4 +152,28 @@
   font-size: 20px;
 }
 
+.pricing__list-item-big {
+  width: 300px;
+  height: 560px;
+  background: #463048;
+  display: flex;
+  flex-direction: column;
 
+  @include md {
+    transform: translate(0, -10%);
+  }
+
+}
+
+.pricing__list-item-category-color {
+  background: rgba(0, 0, 0, 0.11)
+}
+
+.pricing__list-item-price-big {
+  font-size: 82px;
+  line-height: 90px;
+}
+.btn__pricing-big {
+  padding-top: 53px;
+
+}
