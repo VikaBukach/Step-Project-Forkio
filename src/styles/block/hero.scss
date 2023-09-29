@@ -23,6 +23,7 @@
             font-size: 72px;
             line-height: 72px;
         }
+
         @include lg {
             font-size: 82px;
             line-height: 82px;
@@ -38,6 +39,7 @@
         color: $accent;
         max-width: 270px;
         margin: 0 auto 14px auto;
+        font-family: "Lato", sans-serif;
 
         @include md {
             font-size: 24px;

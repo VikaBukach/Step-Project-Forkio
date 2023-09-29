@@ -1,13 +1,14 @@
 .about {
-    background-image: url("../images/testmonials-bg.jpeg");
+    background-image: url("../images/testmonials-bg 1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: $white;
     text-align: center;
+    background-position: bottom;
 
 
 
-    &__wrapper {}
+
 
     // .about__title
 
@@ -53,9 +54,6 @@
         justify-content: center;
     }
 
-    // .about__list-item-image
-
-    &__list-item-image {}
 
     // .about__list-item-text
 
