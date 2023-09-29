@@ -147,8 +147,8 @@
     }
 
     &__list {
-        // display: flex;
-        display: none;
+
+        display: flex;
         flex-direction: column;
         background: #3B3B3B;
         gap: 3px;
