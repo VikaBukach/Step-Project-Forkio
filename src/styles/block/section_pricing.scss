@@ -9,7 +9,7 @@
 }
 
 .pricing {
-  background: url("/../images/Layer2.png");
+  background: url("../images/Layer2.png");
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,6 +31,7 @@
       padding-top: 20px;
       margin-bottom: 88px;
     }
+
     @include lg {
       margin-bottom: 112px;
       width: 780px;
@@ -49,6 +50,7 @@
       font-size: 42px;
       line-height: 44px;
     }
+
     @include lg {
       padding-bottom: 112px;
       font-size: 48px;
@@ -66,6 +68,7 @@
       column-gap: 25px;
       row-gap: 71px;
     }
+
     @include lg {
       gap: 15px;
     }
@@ -163,6 +166,7 @@
   font-size: 82px;
   line-height: 90px;
 }
+
 .btn__pricing-big {
   padding-top: 53px;
 }
