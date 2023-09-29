@@ -209,17 +209,18 @@
 
 .img__editor {
   transform: translateX(10px);
-  max-width: 100%;
-  width: 100%;
+  width: 156%;
   // object-fit: cover;
   object-position: 0 0;
 
   @include md {
-    transform: translateX(calc((100vw - 768px) / 2));
+    max-width: 100%;
+    width: 100%;
+    //transform: translateX(calc((100vw - 768px) / 2));
   }
 
   @include lg {
-    transform: translateX(calc((100vw - 1200px) / 2));
+    //transform: translateX(calc((100vw - 1200px) / 2));
   }
 }
 
