@@ -14,9 +14,19 @@
     // .hero__title
 
     &__title {
+        font-weight: 700;
         font-size: 48px;
         line-height: 1;
         margin-bottom: 19px;
+
+        @include md {
+            font-size: 72px;
+            line-height: 72px;
+        }
+        @include lg {
+            font-size: 82px;
+            line-height: 82px;
+        }
     }
 
     // .hero__subtitle
@@ -28,10 +38,15 @@
         color: $accent;
         max-width: 270px;
         margin: 0 auto 14px auto;
-        font-family: lato;
 
         @include md {
+            font-size: 24px;
             max-width: unset;
+        }
+
+        @include lg {
+            font-size: 30px;
+            line-height: 30px;
         }
     }
 
@@ -75,8 +90,5 @@
         }
     }
 }
-
-
-
 
 // MAIN END
