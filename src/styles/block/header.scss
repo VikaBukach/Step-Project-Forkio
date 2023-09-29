@@ -125,18 +125,12 @@
 .nav {
     position: absolute;
     top: calc(100% + 31px);
-    left: 0;
     width: 100%;
     z-index: 1;
     display: none;
 
     &.show {
         display: block;
-
-        .nav__list {
-            display: flex;
-            z-index: 999;
-        }
     }
 
     @include md {
@@ -153,6 +147,7 @@
     }
 
     &__list {
+        // display: flex;
         display: none;
         flex-direction: column;
         background: #3B3B3B;
@@ -165,6 +160,10 @@
             justify-content: center;
             gap: 47px;
             background-color: transparent;
+        }
+
+        &.show {
+            display: flex;
         }
     }
 
